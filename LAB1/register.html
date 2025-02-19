@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Реєстрація</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <a class="navbar-brand fw-bold d-flex justify-content-center align-items-center" href="index.html">
+            <img src="logo.png" alt="Calculator Logo" width="30"> Калькулятор
+        </a>   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Про сайт</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold" href="register.html">Реєстрація</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Вхід</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-common container-register">
+        <h1 class="container-header">Реєстрація</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Ім'я</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required placeholder="Введіть ваше ім'я">
+                <div class="form-feedback" id="nameFeedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Введіть ваш email">
+                <div class="form-feedback" id="emailFeedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Стать</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                    <label class="form-check-label" for="genderMale">Чоловік</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                    <label class="form-check-label" for="genderFemale">Жінка</label>
+                </div>
+                <div class="form-feedback" id="genderFeedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Дата народження</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                <div class="form-feedback" id="birthdateFeedback"></div>
+            </div>
+
+            <div class="form-group password-container">
+                <label for="password">Пароль</label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Введіть пароль">
+                <span class="toggle-password" id="togglePassword">
+                    <i class="bi bi-eye-slash" id="eyeIcon"></i>
+                </span>
+                <div class="form-feedback" id="passwordFeedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Повторіть пароль</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required placeholder="Повторіть пароль">
+                <div class="form-feedback" id="confirmPasswordFeedback"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Зареєструватися</button>
+        </form>
+
+        <div class="container-footer">
+            <p>Уже є акаунт? <a href="login.html">Увійти</a></p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Калькулятор. Усі права захищені | <a href="about.html">Про нас</a></p>
+    </footer>
+
+</body>
+</html>

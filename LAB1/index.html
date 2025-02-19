@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <a class="navbar-brand fw-bold d-flex justify-content-center align-items-center" href="index.html">
+            <img src="logo.png" alt="Calculator Logo" width="30"> Калькулятор
+        </a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active fw-bold" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Про сайт</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Реєстрація</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Вхід</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="d-flex calculator-container flex-column align-items-center justify-content-center">
+        <div class="info">
+            <h1 class="fw-bold">ОНЛАЙН КАЛЬКУЛЯТОР</h1>
+            <p class="text-muted">
+                Онлайн калькулятор допоможе вам вирішити складні математичні задачі. Розв'язувати задачі дуже просто з нашим онлайн калькулятором.
+            </p>
+        </div>
+
+        <button class="switch-btn" id="switch-toggle">
+            <img id="mode-icon" src="binary.png" alt="Mode Icon" style="width: 30px; height: 30px;">
+            <span id="mode-text">Двійковий</span>
+        </button>
+
+        <div class="calculator">
+            <div class="display-container">
+                <div class="display" id="display">0</div>
+            </div>
+
+            <div class="regular-mode">
+                <button class="calc-btn">%</button>
+                <button class="calc-btn">√</button>
+                <button class="calc-btn">CE</button>
+                <button class="calc-btn dark-btn">C</button>
+
+                <button class="calc-btn">7</button>
+                <button class="calc-btn">8</button>
+                <button class="calc-btn">9</button>
+                <button class="calc-btn red-btn">−</button>
+
+                <button class="calc-btn">4</button>
+                <button class="calc-btn">5</button>
+                <button class="calc-btn">6</button>
+                <button class="calc-btn blue-btn">/</button>
+
+                <button class="calc-btn">1</button>
+                <button class="calc-btn">2</button>
+                <button class="calc-btn">3</button>
+                <button class="calc-btn yellow-btn">×</button>
+
+                <button class="calc-btn">0</button>
+                <button class="calc-btn">.</button>
+                <button class="calc-btn">=</button>
+                <button class="calc-btn green-btn">+</button>
+            </div>
+            
+            <div class="programmer-mode" style="display: none;">
+                <button class="calc-btn">0</button>
+                <button class="calc-btn">1</button>
+                <button class="calc-btn">CE</button>
+                <button class="calc-btn green-btn">+</button>
+                <button class="calc-btn red-btn">-</button>
+                <button class="calc-btn yellow-btn">*</button>
+                <button class="calc-btn blue-btn">/</button>
+                <button class="calc-btn">=</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Калькулятор. Усі права захищені | <a href="about.html">Про нас</a></p>
+    </footer>
+</body>
+</html>
